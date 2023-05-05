@@ -4,24 +4,26 @@ import 'package:mapbox_maps_example/animation.dart';
 import 'package:mapbox_maps_example/camera.dart';
 import 'package:mapbox_maps_example/circle_annotations.dart';
 import 'package:mapbox_maps_example/cluster.dart';
-import 'package:mapbox_maps_example/ornaments.dart';
 import 'package:mapbox_maps_example/geojson_line.dart';
 import 'package:mapbox_maps_example/image_source.dart';
 import 'package:mapbox_maps_example/map_interface.dart';
+import 'package:mapbox_maps_example/ornaments.dart';
 import 'package:mapbox_maps_example/polygon_annotations.dart';
 import 'package:mapbox_maps_example/polyline_annotations.dart';
 import 'package:mapbox_maps_example/tile_json.dart';
 import 'package:mapbox_maps_example/vector_tile_source.dart';
 
 import 'full_map.dart';
+import 'gesture_multihandlers.dart';
+import 'gestures.dart';
 import 'location.dart';
 import 'page.dart';
 import 'point_annotations.dart';
 import 'projection.dart';
 import 'style.dart';
-import 'gestures.dart';
 
 final List<ExamplePage> _allPages = <ExamplePage>[
+  GestureMultihandlersPage(),
   FullMapPage(),
   StylePage(),
   CameraPage(),
